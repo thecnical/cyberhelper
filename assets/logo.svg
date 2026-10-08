@@ -1,0 +1,110 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 3D Shield Background with Gradient -->
+  <defs>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10a37f;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#19c37d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0d8a6d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="highlightGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
+      <feOffset dx="0" dy="8" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Main Shield Shape with 3D Effect -->
+  <path d="M256 32L96 96V224C96 352 176 448 256 480C336 448 416 352 416 224V96L256 32Z"
+        fill="url(#shieldGradient)"
+        filter="url(#shadow)"/>
+
+  <!-- Shield Highlight for 3D effect -->
+  <path d="M256 32L96 96V224C96 280 120 336 160 380L256 420C336 388 416 292 416 224V96L256 32Z"
+        fill="url(#highlightGradient)"
+        opacity="0.4"/>
+
+  <!-- Dark Edge for Depth -->
+  <path d="M256 32L96 96V100L256 36L416 100V96L256 32Z"
+        fill="#0a6b54"
+        opacity="0.6"/>
+
+  <!-- Circuit Brain Design -->
+  <!-- Central Brain/AI Node -->
+  <circle cx="256" cy="240" r="60" fill="#ffffff" opacity="0.95"/>
+  <circle cx="256" cy="240" r="50" fill="#f0f0f0" opacity="0.9"/>
+
+  <!-- Neural Network Connections -->
+  <!-- Left Neurons -->
+  <line x1="206" y1="240" x2="160" y2="200" stroke="#ffffff" stroke-width="3" opacity="0.8"/>
+  <line x1="206" y1="240" x2="160" y2="280" stroke="#ffffff" stroke-width="3" opacity="0.8"/>
+  <circle cx="160" cy="200" r="12" fill="#ffffff" opacity="0.9"/>
+  <circle cx="160" cy="280" r="12" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Right Neurons -->
+  <line x1="306" y1="240" x2="352" y2="200" stroke="#ffffff" stroke-width="3" opacity="0.8"/>
+  <line x1="306" y1="240" x2="352" y2="280" stroke="#ffffff" stroke-width="3" opacity="0.8"/>
+  <circle cx="352" cy="200" r="12" fill="#ffffff" opacity="0.9"/>
+  <circle cx="352" cy="280" r="12" fill="#ffffff" opacity="0.9"/>
+
+  <!-- Top Neurons -->
+  <line x1="256" y1="180" x2="256" y2="140" stroke="#ffffff" stroke-width="3" opacity="0.8"/>
+  <line x1="256" y1="180" x2="220" y2="140" stroke="#ffffff" stroke-width="2.5" opacity="0.7"/>
+  <line x1="256" y1="180" x2="292" y2="140" stroke="#ffffff" stroke-width="2.5" opacity="0.7"/>
+  <circle cx="256" cy="140" r="12" fill="#ffffff" opacity="0.9"/>
+  <circle cx="220" cy="140" r="10" fill="#ffffff" opacity="0.85"/>
+  <circle cx="292" cy="140" r="10" fill="#ffffff" opacity="0.85"/>
+
+  <!-- Bottom Neurons -->
+  <line x1="256" y1="300" x2="256" y2="340" stroke="#ffffff" stroke-width="3" opacity="0.8"/>
+  <line x1="256" y1="300" x2="220" y2="340" stroke="#ffffff" stroke-width="2.5" opacity="0.7"/>
+  <line x1="256" y1="300" x2="292" y2="340" stroke="#ffffff" stroke-width="2.5" opacity="0.7"/>
+  <circle cx="256" cy="340" r="12" fill="#ffffff" opacity="0.9"/>
+  <circle cx="220" cy="340" r="10" fill="#ffffff" opacity="0.85"/>
+  <circle cx="292" cy="340" r="10" fill="#ffffff" opacity="0.85"/>
+
+  <!-- AI Processor Symbol in Center -->
+  <rect x="236" y="220" width="40" height="40" rx="4" fill="#10a37f" opacity="0.9"/>
+  <rect x="241" y="225" width="30" height="30" rx="2" fill="#19c37d" opacity="0.95"/>
+
+  <!-- Circuit Lines -->
+  <line x1="246" y1="235" x2="266" y2="235" stroke="#ffffff" stroke-width="2"/>
+  <line x1="246" y1="245" x2="266" y2="245" stroke="#ffffff" stroke-width="2"/>
+  <line x1="251" y1="230" x2="251" y2="250" stroke="#ffffff" stroke-width="2"/>
+  <line x1="261" y1="230" x2="261" y2="250" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Pulsing Energy Dots -->
+  <circle cx="256" cy="240" r="4" fill="#ffffff">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Cyber Lock Symbol at Bottom -->
+  <path d="M240 380 L240 365 C240 355 246 350 256 350 C266 350 272 355 272 365 L272 380"
+        stroke="#ffffff"
+        stroke-width="4"
+        fill="none"
+        opacity="0.9"/>
+  <rect x="235" y="380" width="42" height="30" rx="4" fill="#ffffff" opacity="0.9"/>
+  <circle cx="256" cy="395" r="5" fill="#10a37f"/>
+
+  <!-- Corner Tech Details -->
+  <circle cx="140" cy="120" r="6" fill="#ffffff" opacity="0.7"/>
+  <circle cx="372" cy="120" r="6" fill="#ffffff" opacity="0.7"/>
+  <circle cx="140" cy="360" r="6" fill="#ffffff" opacity="0.7"/>
+  <circle cx="372" cy="360" r="6" fill="#ffffff" opacity="0.7"/>
+
+  <!-- Small connecting lines for tech feel -->
+  <line x1="140" y1="120" x2="160" y2="140" stroke="#ffffff" stroke-width="1.5" opacity="0.5"/>
+  <line x1="372" y1="120" x2="352" y2="140" stroke="#ffffff" stroke-width="1.5" opacity="0.5"/>
+  <line x1="140" y1="360" x2="160" y2="340" stroke="#ffffff" stroke-width="1.5" opacity="0.5"/>
+  <line x1="372" y1="360" x2="352" y2="340" stroke="#ffffff" stroke-width="1.5" opacity="0.5"/>
+</svg>

@@ -1,0 +1,91 @@
+{
+  "name": "cyberhelper",
+  "version": "1.0.0",
+  "description": "A powerful ChatGPT-like desktop application for Linux users",
+  "main": "dist/main/main.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:react\" \"npm run dev:electron\"",
+    "dev:react": "vite",
+    "dev:electron": "wait-on http://localhost:5173 && electron .",
+    "build": "tsc && vite build",
+    "build:electron": "tsc -p tsconfig.electron.json",
+    "package:linux": "npm run build && npm run build:electron && electron-builder --linux",
+    "package:deb": "npm run build && npm run build:electron && electron-builder --linux deb",
+    "package:appimage": "npm run build && npm run build:electron && electron-builder --linux AppImage",
+    "package:all": "npm run build && npm run build:electron && electron-builder --linux deb --linux AppImage --linux snap",
+    "start": "electron ."
+  },
+  "build": {
+    "appId": "com.cyberhelper.app",
+    "productName": "CyberHelper",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "package.json"
+    ],
+    "linux": {
+      "target": [
+        "deb",
+        "AppImage",
+        "snap"
+      ],
+      "category": "Utility",
+      "icon": "assets/icon.png",
+      "description": "AI-powered chat assistant for Linux",
+      "maintainer": "CyberHelper Team"
+    },
+    "deb": {
+      "depends": [
+        "gconf2",
+        "gconf-service",
+        "libnotify4",
+        "libappindicator1",
+        "libxtst6",
+        "libnss3"
+      ]
+    },
+    "snap": {
+      "confinement": "strict",
+      "grade": "stable"
+    }
+  },
+  "keywords": [
+    "ai",
+    "chatbot",
+    "chatgpt",
+    "linux",
+    "electron",
+    "desktop",
+    "assistant"
+  ],
+  "author": "CyberHelper Team",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
+    "@google/generative-ai": "^0.21.0",
+    "axios": "^1.7.9",
+    "electron-store": "^10.0.0",
+    "marked": "^15.0.4",
+    "openai": "^4.73.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
+    "react-syntax-highlighter": "^15.6.1",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.0",
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3",
+    "wait-on": "^8.0.1"
+  }
+}

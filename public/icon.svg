@@ -1,0 +1,23 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10a37f;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#19c37d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Shield -->
+  <path d="M32 4L12 12V28C12 44 22 56 32 60C42 56 52 44 52 28V12L32 4Z" fill="url(#grad)"/>
+
+  <!-- AI Brain -->
+  <circle cx="32" cy="30" r="10" fill="white" opacity="0.9"/>
+  <circle cx="24" cy="26" r="3" fill="white" opacity="0.8"/>
+  <circle cx="40" cy="26" r="3" fill="white" opacity="0.8"/>
+  <circle cx="24" cy="34" r="3" fill="white" opacity="0.8"/>
+  <circle cx="40" cy="34" r="3" fill="white" opacity="0.8"/>
+  <line x1="32" y1="20" x2="32" y2="40" stroke="white" stroke-width="2" opacity="0.7"/>
+
+  <!-- Lock -->
+  <rect x="28" y="46" width="8" height="6" rx="1" fill="white" opacity="0.9"/>
+  <path d="M30 46V43C30 41.5 30.5 41 32 41C33.5 41 34 41.5 34 43V46" stroke="white" stroke-width="1.5" fill="none" opacity="0.9"/>
+</svg>
