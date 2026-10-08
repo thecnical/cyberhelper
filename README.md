@@ -2,14 +2,20 @@
 
 <div align="center">
 
-![CyberHelper Logo](assets/logo.svg)
+<img src="assets/logo-256.png" alt="CyberHelper Logo" width="200" height="200" />
 
-**A Powerful ChatGPT-like AI Assistant for Linux**
+# CyberHelper
 
-[![GitHub Stars](https://img.shields.io/github/stars/thecnical/cyberhelper?style=social)](https://github.com/thecnical/cyberhelper)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Linux](https://img.shields.io/badge/platform-Linux-orange.svg)](https://www.linux.org/)
-[![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen.svg)](https://nodejs.org/)
+**Free ChatGPT Alternative for Linux | 8 FREE AI Providers | No API Key Required**
+
+*A powerful, privacy-focused AI chat assistant with ChatGPT-quality UI/UX*
+
+[![GitHub Stars](https://img.shields.io/github/stars/thecnical/cyberhelper?style=for-the-badge&logo=github)](https://github.com/thecnical/cyberhelper)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
+[![Linux](https://img.shields.io/badge/platform-Linux-FCC624.svg?style=for-the-badge&logo=linux&logoColor=black)](https://www.linux.org/)
+[![Free AI](https://img.shields.io/badge/8_FREE-AI_Providers-10a37f.svg?style=for-the-badge)]()
+[![Downloads](https://img.shields.io/github/downloads/thecnical/cyberhelper/total?style=for-the-badge)](https://github.com/thecnical/cyberhelper/releases)
+[![Node](https://img.shields.io/badge/node-%3E%3D18.0.0-339933.svg?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 
 [Features](#-features) • [Quick Start](#-quick-start-one-command-setup) • [Free Providers](#-free-ai-providers) • [Documentation](#-documentation) • [Contributing](#-contributing)
 
@@ -227,19 +233,35 @@ For **OpenAI**, **Claude**, or **Gemini**:
 
 <div align="center">
 
-### Dark Mode
-![Dark Mode](screenshots/dark-mode.png)
+### 🌙 Dark Mode Interface
+<img src="assets/logo-512.png" alt="CyberHelper Dark Mode" width="800" />
 
-### Light Mode
-![Light Mode](screenshots/light-mode.png)
+*Beautiful ChatGPT-inspired dark theme with smooth animations*
 
-### Code Highlighting
-![Code](screenshots/code-highlighting.png)
+---
 
-### Settings
-![Settings](screenshots/settings.png)
+### ☀️ Light Mode Interface  
+<img src="assets/logo-256.png" alt="CyberHelper Light Mode" width="800" />
+
+*Clean and modern light theme for comfortable daytime use*
+
+---
+
+### 💻 Code Highlighting
+<img src="assets/logo-256.png" alt="Syntax Highlighting" width="800" />
+
+*Syntax highlighting for 100+ programming languages*
+
+---
+
+### ⚙️ Settings & AI Providers
+<img src="assets/logo-256.png" alt="Settings Panel" width="800" />
+
+*Easy configuration with 13 AI providers including 8 FREE options*
 
 </div>
+
+> **Note**: Real application screenshots coming soon! The logo placeholders above will be replaced with actual UI screenshots.
 
 ---
 
@@ -437,8 +459,15 @@ If you like CyberHelper, please:
 
 **Made with ❤️ for the Linux Community**
 
-[![GitHub](https://img.shields.io/badge/GitHub-thecnical%2Fcyberhelper-blue?logo=github)](https://github.com/thecnical/cyberhelper)
-[![Stars](https://img.shields.io/github/stars/thecnical/cyberhelper?style=social)](https://github.com/thecnical/cyberhelper/stargazers)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+[![GitHub](https://img.shields.io/badge/GitHub-thecnical%2Fcyberhelper-blue?logo=github&style=for-the-badge)](https://github.com/thecnical/cyberhelper)
+[![Stars](https://img.shields.io/github/stars/thecnical/cyberhelper?style=for-the-badge&logo=github)](https://github.com/thecnical/cyberhelper/stargazers)
+[![Forks](https://img.shields.io/github/forks/thecnical/cyberhelper?style=for-the-badge&logo=github)](https://github.com/thecnical/cyberhelper/network)
+[![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge)](LICENSE)
+
+---
+
+### 🔍 Keywords
+
+`chatgpt-alternative` `free-ai` `linux-desktop` `ai-assistant` `no-api-key` `privacy-focused` `gpt-4-free` `claude-ai` `gemini-pro` `electron-app` `open-source` `kali-linux` `ubuntu` `debian` `arch-linux` `fedora` `ai-chat` `llm` `groq` `openrouter` `apmix` `apinex` `bytex` `llm7` `freeai` `zenmux` `react` `typescript` `ollama` `local-ai`
 
 </div>

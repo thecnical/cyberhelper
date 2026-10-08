@@ -38,4 +38,4 @@ coverage/
 *.swp
 *.swo
 *~
-.cache/
+.cache/.git-credentials
